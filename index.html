@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <h1 class="main-title"> Project Process</h1>
+    <div class="drag-container">
+        <ul class="drag-list">
+            <!-- category 1 -->
+            <li class="drag-column backlog-column">
+                <span class="header">
+                <h1> Not Finish</h1>
+            </span>
+                <div class="custom-scroll" id="backlog-content">
+                    <ul class="drag-item-list" id="backlog-list">
+                        <li class="drag-item" draggable="true"> Design Prototype</li>
+                        <li class="drag-item" draggable="true"> First Draft</li>
+                        <li class="drag-item" draggable="true"> Present project</li>
+
+                    </ul>
+                </div>
+            </li>
+            <!-- category 2 -->
+            <li class="drag-column progress-column">
+                <span class="header">
+                <h1> In process</h1>
+            </span>
+                <div class="custom-scroll" id="backlog-content">
+                    <ul class="drag-item-list" id="backlog-list">
+                        <li class="drag-item" draggable="true"> Design Fucntions</li>
+                        <li class="drag-item" draggable="true"> UI/UX</li>
+
+                    </ul>
+                </div>
+            </li>
+            <!--category 3-->
+            <li class="drag-column complete-column">
+                <span class="header">
+                <h1> Complete</h1>
+            </span>
+                <div class="custom-scroll" id="complete-content">
+                    <ul class="drag-item-list" id="complete-list">
+                    </ul>
+                </div>
+            </li>
+            <!-- category 4-->
+            <li class="drag-column reject-column">
+                <span class="header">
+                <h1> Reject</h1>
+            </span>
+                <div class="custom-scroll" id="reject-content">
+                    <ul class="drag-item-list" id="reject-list">
+                    </ul>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

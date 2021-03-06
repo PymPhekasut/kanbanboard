@@ -1,0 +1,111 @@
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+         :root {
+            --category-1: #01457c;
+            --category-2: #118a17;
+            --category-3: #a3480b;
+            --category-4: #c20606;
+        }
+        
+        html {
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        body {
+            margin: 0;
+            background-image: url('https://unlockandrepair.com/wp-content/uploads/2019/02/notebook-1280538_1280-1-e1551008218644.jpg');
+            background-attachment: fixed;
+            background-position: cover;
+            color: white;
+            overflow-y: hidden;
+        }
+        
+        h1 {
+            letter-spacing: 2px;
+            text-shadow: 1px 2px 5px rgb(63, 62, 62);
+        }
+        
+        .main-title {
+            text-align: center;
+            font-size: 3rem;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        .drag-container {
+            line-height: 30px;
+            padding: 5px 10px;
+            margin: 10px;
+            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .drag-list {
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .custom-scroll {
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            margin: 0 10px;
+            flex: 1;
+            position: relative;
+            overflow-x: hidden;
+            overflow-y: auto;
+            max-height: 53vh;
+        }
+        
+        .drag-column {
+            flex: 1;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        
+        .header h1 {
+            font-size: 1.25rem;
+        }
+        
+        .backlog-column .header {
+            background-color: var(--category-1);
+        }
+        
+        .progress-column .header {
+            background-color: var(--category-2);
+        }
+        
+        .complete-column .header {
+            background-color: var(--category-3);
+        }
+        
+        .reject-column .header {
+            background-color: var(--category-4);
+        }
+        
+        .drag-item-list {
+            min-height: 50px;
+        }
+        
+        .drag-item {
+            margin: 10px;
+            padding: 10px;
+            height: fit-content;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            line-height: 1.5rem;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
